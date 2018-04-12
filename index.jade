@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+html(lang="en")
+head
+  meta(charset="UTF-8")
+  meta(name="viewport", content="width=device-width, initial-scale=1.0")
+  meta(http-equiv="X-UA-Compatible", content="ie=edge")
+  title Studio Ghibli Film Index
+  link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css')
+body
+  .container
+    .row
+      h1.center Studio Ghibli Film Index
+      input#input.col.s12.m6.offset-m3(placeholder="Search Ghibli Films")
+      #output.col.s12
+    .row
+      footer.center 
+        p.
+          Ghibli Film Index &copy; Scott Enock
+          <br>
+          Made possible with <a href="https://github.com/janaipakos/ghibliapi" target="_blank">Ghibli API</a>
+          
+  
+  script(src="script.js")
