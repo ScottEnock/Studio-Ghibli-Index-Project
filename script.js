@@ -1,17 +1,15 @@
 
 
 let xhr = new XMLHttpRequest();
-let url = "https://ghibliapi.herokuapp.com/" + "films";
+let url = "https://ghibliapi.vercel.app/" + "films";
 xhr.open("GET", url , true);
 xhr.send();
 
 
 xhr.onload = function(){
-
-
+    
   if (this.status == 200){
     let films = JSON.parse(this.responseText);
-    let text = "";
     films.forEach(function(film){
       document.querySelector("#output").innerHTML +=
       `
